@@ -16,5 +16,4 @@ for (const ingredient of ingredients) {
   liEl.textContent = ingredient;
   liEl.classList.add("item");
   ulEl.appendChild(liEl)
-
-}
+};
