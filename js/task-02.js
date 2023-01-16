@@ -15,5 +15,5 @@ for (const ingredient of ingredients) {
   const liEl = document.createElement("li");
   liEl.textContent = ingredient;
   liEl.classList.add("item");
-  ulEl.appendChild(liEl)
+  ulEl.insertAdjacentElement('beforeend', liEl)
 };
