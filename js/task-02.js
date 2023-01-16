@@ -11,9 +11,11 @@ const ingredients = [
 const ulEl = document.querySelector("ul#ingredients")
 console.log(ulEl);
 
-for (const ingredient of ingredients) {
+const markup = ingredients.map((ingredient) => {
   const liEl = document.createElement("li");
   liEl.textContent = ingredient;
   liEl.classList.add("item");
-  ulEl.insertAdjacentElement('beforeend', liEl)
-};
+  return liEl;
+});
+
+ulEl.append(...markup);
