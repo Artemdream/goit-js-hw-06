@@ -23,8 +23,9 @@ function createBoxes(amount) {
 
     const item = document.createElement("div");
     item.classList.add("new-item");
-    item.style.marginTop = 5 + "px";
-    item.style.borderRadius = 5 + "px";
+    item.style.marginTop = "10px";
+    item.style.border = "1px solid black";
+    item.style.borderRadius = "5px";
     item.style.width = boxSize + "px";
     item.style.height = boxSize + "px";
     item.style.backgroundColor = getRandomHexColor();
