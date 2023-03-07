@@ -1,14 +1,13 @@
 const ingredients = [
-  'Potatoes',
-  'Mushrooms',
-  'Garlic',
-  'Tomatos',
-  'Herbs',
-  'Condiments',
+  "Potatoes",
+  "Mushrooms",
+  "Garlic",
+  "Tomatos",
+  "Herbs",
+  "Condiments",
 ];
 
-
-const ulEl = document.querySelector("ul#ingredients")
+const ulEl = document.querySelector("#ingredients");
 console.log(ulEl);
 
 const markup = ingredients.map((ingredient) => {

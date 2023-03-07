@@ -14,21 +14,20 @@ refs.btnDestroy.addEventListener('click', rdestroyBoxes)
 
 function inputNumber () {
   return refs.input.value;
-// console.log(refs.input.value); 
-}
+};
 
 function createBoxes(amount) {
     const createDiv = [];
     amount = refs.input.value;
-    for (let index = 1; index <= amount; index += 1) {
+    for (let i = 1; i <= amount; i += 1) {
       const item = document.createElement('div');
       createDiv.push(item);
     }
     refs.divBox.insertAdjacentHTML("beforeend", createDiv);
 };
 
-function rdestroyBoxes() {
-refs.divBox.reset()
+function rdestroyBoxes(e) {
+
 }
 
-console.log(refs.input.value);
+console .log(refs.input.value);
